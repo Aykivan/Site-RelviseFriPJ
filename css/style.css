@@ -1,4 +1,4 @@
-/* Обнуление */
+/* Обнуление------------------------------------------------------------------------------------ */
 *,
 *::before,
 *::after {
@@ -36,12 +36,13 @@ html,
 body {
     height: 100%;
     line-height: 1;
-    font-size: 16px;
-    color: #000;
+    font-size: 14px;
+    color: #252B42;
+    font-weight: 500;
+    font-family: Montserrat;
 }
 
-/* Обнуление */
-
+/* Общие блоки------------------------------------------------------------------------------------ */
 .wrapper {
     min-height: 100%;
     overflow: hidden;
@@ -49,6 +50,55 @@ body {
 
 ._container {
     max-width: 1046px;
+    padding: 0 15px;
     margin: 0px auto;
+    box-sizing: content-box;
+}
+
+/* Header------------------------------------------------------------------------------------ */
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+
+.header__container {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: inherit;
+}
+
+.header__menu {
+    margin: 0 0 0 133px;
+}
+
+.menu {}
+
+.menu__list {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.menu__item {
+}
+
+.menu__item:not(:last-child){
+    margin: 0px 21px 0px 0px;
+}
+
+.menu__link {
+    color: #737373;
+    font-weight: 600;
+    line-height: calc(24/14*100%);
 
 }
+
+/* Main------------------------------------------------------------------------------------ */
